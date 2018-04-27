@@ -5,11 +5,10 @@
     </a>
 
     <div class="right menu">
-      <div v-if="isLoggedIn">
-        Galleries button
-
-        upload button
-        logout button
+      <div v-if="isLoggedIn" class="horizontal">
+        <a class="item">Galleries</a>
+        <a class="item">Upload</a>
+        <a class="item">Logout</a>
       </div>
 
       <a v-else href="#" class="ui item" @click="login">
@@ -28,3 +27,10 @@ export default {
   methods: mapActions(['login'])
 };
 </script>
+
+<style scoped>
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+</style>
