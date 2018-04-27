@@ -1,3 +1,5 @@
+import api from '../../api/imgur';
+
 const state = {
   images: []
 };
@@ -7,7 +9,11 @@ const getters = {
 };
 
 const actions = {
-  fetchImages() {}
+  async fetchImages({ rootState }) {
+    const { token } = rootState.auth;
+    const response = await api.fetchImages(token);
+    console.log(response);
+  }
 };
 
 const mutations = {
