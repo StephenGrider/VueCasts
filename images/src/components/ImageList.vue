@@ -16,14 +16,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-div {
-  column-count: 3;
-  column-gap: 0;
-}
-img {
-  max-width: 100%;
-  padding: 5px;
-}
-</style>
