@@ -1,6 +1,7 @@
 <template>
-  <div>
-    Upload form
+  <div class="dropper">
+    <input type="file" />
+    <span>Drag files here!</span>
   </div>
 </template>
 
@@ -9,3 +10,11 @@ export default {
   name: 'UploadForm'
 };
 </script>
+
+<style scoped>
+.dropper {
+  height: 30vh;
+  border: 2px dashed black;
+  border-radius: 5px;
+}
+</style>
