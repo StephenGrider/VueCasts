@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.19",
     "qs": "^6.5.1",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
